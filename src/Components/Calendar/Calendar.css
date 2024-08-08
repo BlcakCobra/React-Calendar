@@ -1,0 +1,56 @@
+.calendar-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.day, .empty-day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.meeting {
+  background-color: #ffeb3b;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.todo-list li:hover {
+  background-color: #f0f0f0;
+}
